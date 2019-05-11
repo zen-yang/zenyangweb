@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户编辑</title>
+</head>
+<body>
+    <form action="/user/update" method="POST">
+        <input type="text" name="id" value="{{ user.id }}" hidden>
+        <br>
+        <input type="text" name="username" value="{{ user.username }}">
+        <br>
+        <input type="password" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">更新</button>
+    </form>
+</body>
+</html>
